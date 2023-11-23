@@ -5,6 +5,12 @@ console.log('Server is starting...');
 const express = require('express');
 const cors = require('cors');
 
+// API endpoint
+const apiUrl = 'http://127.0.0.1:5000/predict';
+
+const axios = require('axios');
+
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -21,14 +27,31 @@ app.post('/api/scan-email', (req, res) => {
 
   console.log(emailContent)
 
+  // Email data to send in the request
+  const emailData = {
+    email: emailContent,
+  };
+
+  // Make the POST request using Axios
+  axios.post(apiUrl, emailData)
+    .then(response => {
+      console.log('Response:', response.data);
+      res.json(response.data);
+
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+
   // Process the emailContent and send a response
-  res.json({ status: 'success', message: 'Email scanned successfully' });
 });
 
 app.get('/test', (req, res) => {
   res.send('Backend is up and running!');
 });
 
+
+// Email data to send in the request
 
 
 app.listen(PORT, () => {
