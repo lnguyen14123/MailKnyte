@@ -43,8 +43,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     var safeRes = document.getElementById("safe-res");
                     var conRes = document.getElementById("con-res");
                     
-                    var percentDanger = (probabilities[0][0]) * 100;
-                    var percentSafe = (probabilities[0][1]) * 100;
+                    var percentDanger = ((probabilities[0][0]) * 100).toFixed(2);
+                    var percentSafe = ((probabilities[0][1]) * 100).toFixed(2);
 
                     console.log(data)
                     
