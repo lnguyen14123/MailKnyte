@@ -48,17 +48,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     console.log(data)
 
-                    dangerRes.innerHTML = "MailBuddy says that this email has a " + percentDanger + " % chance of being potentially dangerous!";
-                    safeRes.innerHTML = "MailBuddy says that this email has a " + percentSafe + "% chance of being safe!";
+                    dangerRes.innerHTML = "MailKnyte says that this email has a " + percentDanger + " % chance of being potentially dangerous!";
+                    safeRes.innerHTML = "MailKnyte says that this email has a " + percentSafe + "% chance of being safe!";
 
 
                     if (predictions.includes('Phishing Email')) {
                         // Display a warning or take appropriate action
-                        conRes.innerHTML = "MailBuddy thinks this email is suspicious or dangerous. Be careful!";
+                        conRes.innerHTML = "MailKnyte thinks this email is suspicious or dangerous. Be careful!";
 
                     } else {
                         // Display a success message or other appropriate action
-                        conRes.innerHTML = "MailBuddy thinks this email is safe. If you recognize the sender, its all ok!";
+                        conRes.innerHTML = "MailKnyte thinks this email is safe. If you recognize the sender, its all ok!";
 
                     }
 
