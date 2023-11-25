@@ -1,1 +1,1 @@
-# MailBuddy
+# MailKnyte
