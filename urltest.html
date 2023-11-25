@@ -27,16 +27,16 @@
 
 		<!-- Header -->
 		<header id="header" class="alt">
-			<h1>MailBuddy</h1>
-			<p>Your AI-powered email guardian.
+			<h1>URL Tool</h1>
+			<p>Test your URLs with the VirusTotal API!
 			</p>
 		</header>
 
 		<!-- Nav -->
 		<nav id="nav">
 			<ul>
-				<li><a href="#intro" class="active">Email Tool</a></li>
-				<li><a href="urltest.html" class="">URL Tool</a></li>				
+				<li><a href="index.html" class="">Email Tool</a></li>
+				<li><a href="#intro" class="active">URL Tool</a></li>
 				<li><a href="blog.html" class="">Learn More</a></li>
 
 				<!-- <li><a href="#first">First Section</a></li>
@@ -53,64 +53,68 @@
 				<div class="spotlight">
 					<div class="content">
 						<header class="major">
-							<h2>What is MailBuddy?</h2>
+							<h2>What is the URL Tool?</h2>
 						</header>
-						<p>Mail Buddy: Your AI-powered email guardian. 
-							Scan incoming emails for potential scams with personalized risk assessments.
-							 A reliable friend in your inbox, making your digital communication safer and worry-free.</p>
+						<p>Quickly assess the security of any URL with the VirusTotal URL Scanner.
+							Powered by the robust VirusTotal API, this tool provides quick results,
+							using the security abilities of multiple antivirus engines!</p>
 					</div>
 					<span class="image"><img src="images/icon.png" alt="" /></span>
 				</div>
 
-							<!-- Form -->
-			<section>
-				<h2>Scan your email with MailBuddy!</h2>
-				<form method="post" action="#" id="email-form">
-					<div class="row gtr-uniform">
-						<div class="col-12">
-							<textarea name="demo-message" id="demo-message" placeholder="Scan your email here!"
-								rows="6"></textarea>
+				<!-- Form -->
+				<section>
+					<h2>Scan your URL with VirusTotal!</h2>
+					<form method="post" action="#" id="url-form">
+						<div class="row gtr-uniform">
+							<div class="col-12">
+								<textarea name="demo-message" id="demo-message" placeholder="Scan your URL here!"
+									rows="6"></textarea>
+							</div>
+							<div class="col-12">
+								<ul class="actions">
+									<li><input type="submit" value="Scan Now!" class="primary" /></li>
+								</ul>
+							</div>
 						</div>
-						<div class="col-12">
-							<ul class="actions">
-								<li><input type="submit" value="Scan Now!" class="primary" /></li>
-							</ul>
-						</div>
-					</div>
-				</form>
-			</section>
+					</form>
+				</section>
 
 
 			</section>
 
 			<!-- First Section -->
 			<section id="first" class="main special">
-				<header class="major">
-					<h2>Your Results</h2>
-				</header>
-				<ul class="features">
-					<li>
-						<span class="icon solid major style1 fa-exclamation-triangle"></span>
-						<h3>Danger</h3>
-						<p id="danger-res">The chances of this email being dangerous will display here.</p>
-					</li>
-					<li>
-						<span class="icon major style3  fa-heart						"></span>
-						<h3>Safe</h3>
-						<p id="safe-res">The chances of this email being safe will display here.</p>
-					</li>
-					<li>
-						<span class="icon major style5 fa-gem"></span>
-						<h3>Conclusion</h3>
-						<p id="con-res">Your end results will show here. Scroll up to try me!</p>
-					</li>
-				</ul>
+				<section>
+					<h2>Results</h2>
+
+					<div class="table-wrapper">
+						<table class="alt">
+							<thead>
+								<tr>
+									<th>Engine</th>
+									<th>Found?</th>
+									<th>Result</th>
+								</tr>
+							</thead>
+
+							<tbody id="url-results-table">
+							</tbody>
+						</table>
+					</div>
+				</section>
+
 				<footer class="major">
 					<ul class="actions special">
 						<li><a href="blog.html" class="button">Learn More</a></li>
 					</ul>
 				</footer>
+
+
 			</section>
+
+			<!-- Table -->
+
 
 			<!-- Second Section
 			<section id="second" class="main special">
