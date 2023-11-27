@@ -14,18 +14,25 @@ VirusTotal URL Scanner: Checks the safety of URLs through the VirusTotal API, id
 
 ## Technologies Used
 
-Frontend: HTML, CSS, JavaScript
+Frontend: HTML5, CSS, JavaScript, Python, Express, Node.js, Flask, sk-learn
+
 Backend: Node.js, Express
-Machine Learning: TensorFlow.js (optional)
+
+Machine Learning: sk-learn RandomForestClassifier
+
 APIs: VirusTotal API
 
 ## Installation
 
 Clone the repository:
 ```git clone https://github.com/lnguyen14123/MailKnyte.git```
+
 Set up the frontend and backend components as per the project structure.
+
 Obtain API keys for services like VirusTotal and store them securely.
+
 Configure the project to use these API keys.
+
 Run using: ```node src/index.js```
 
 
