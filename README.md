@@ -18,15 +18,12 @@ APIs: VirusTotal API
 
 Installation
 Clone the repository:
-
-bash
-Copy code
-git clone https://github.com/your-username/MailBuddy.git
+git clone https://github.com/lnguyen14123/MailKnyte.git
 Set up the frontend and backend components as per the project structure.
-
 Obtain API keys for services like VirusTotal and store them securely.
-
 Configure the project to use these API keys.
+Run using: node src/index.js
+
 
 Contributing
 Contributions are welcome! If you have ideas for new features or improvements, please submit an issue or a pull request.
