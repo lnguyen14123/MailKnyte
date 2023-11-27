@@ -1,6 +1,6 @@
 # MailKnyte
 
-MailBuddy Logo
+![MailBuddy Logo](/images/small_icon.png)
 
 ## Overview
 
